@@ -1,0 +1,517 @@
+/*-------------
+  color
+  btn color=turquoise
+  ------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+body, html{
+  font-family: 'Libre Baskerville', serif;
+  color: rgba(55, 75, 92);
+  overflow-x: hidden;    
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(144, 203, 207); 
+}
+
+/*-------------
+  reuse
+  ------------*/
+
+.container{
+    width: 1110px;
+    margin:0 auto;
+}
+
+ 
+h1{
+    font-size:3rem;
+    font-weight: bold;  
+}
+
+.btn{
+    display: inline-block;
+    background-color: turquoise;
+    color: white;
+    text-decoration: none;
+    border-radius:8px ;
+    padding: 10px 38px;
+    margin-top: 4%;
+}
+
+.btn-gost{
+   display: inline-block;
+   color:turquoise ; 
+   text-decoration: none;
+   border:solid turquoise 2px;
+   border-radius:10px ;
+   padding: 5px 15px;
+}
+
+.btn-gost:hover{
+  color: white;
+  background-color: turquoise;
+}
+
+h2{
+    margin-bottom: 35px ;
+}
+
+section{
+  padding: 100px 0px;
+}
+
+/*-------------
+  header
+  ------------*/
+
+ header{
+    background-color:rgb(241, 254, 254);  
+ } 
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;       
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-top:5px ; 
+}
+
+.logo h2{
+    margin: 0px;
+}
+
+.logo img{
+    height: 70px;
+    margin-top: 2%;
+}
+
+.main-nav{
+    list-style: none;
+    margin-top: 15px; 
+}
+
+.main-nav li{
+    display: inline-flex;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.main-nav :last-child{
+    border-radius: 8px;
+    border:solid turquoise 2px;
+    padding:10px 38px;
+}
+
+/*-------------
+hero
+---------------*/
+
+.hero-text{
+    background-image: linear-gradient(rgb(241, 254, 254), rgb(255, 255, 255));
+}
+
+.hero-text1{
+  width: 450px;
+}
+
+.main-img img{
+    position: absolute;
+}
+
+.imga{
+    z-index: 0;
+    top:13%;
+    left:45%;
+}
+
+.imgb{
+  padding: 20px;
+  background-color: white;
+  z-index: 1;
+}
+
+.imgb div {
+    background-color: white; 
+    border: aqua 3px solid;
+    padding: 50px;   
+}
+
+.imgc{
+    z-index: 2;
+    top:40%;
+    left:39%;
+}
+
+/*-------------
+  proud
+  ----------*/
+  .proud{
+    background-color: rgb(251, 254, 254);  
+    text-align: center;  
+  }
+
+  .proud-title{
+    width: 400px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+
+  .post-proud{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;    
+}
+
+.post-proud div{
+  cursor: pointer;
+}
+
+.cycle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.cycle div{
+  border-radius: 5px;
+  padding: 3px;
+  background-color: rgba(55, 75, 92);
+  margin: 4px;
+}
+
+/*-------------
+  product
+  ----------*/
+ 
+  .product{
+    background-color:rgb(251, 254, 254);
+    text-align: center;
+  }
+
+  .product-title{
+    width: 400px;
+    margin: 0 auto; 
+    padding-bottom: 80px;
+  }
+
+  .subscrib{
+     display: flex;
+     justify-content: center;
+     padding-bottom:150px ;
+  }
+
+  .subscrib input[type=text]{
+     flex-basis: 300px;
+     border-radius: 25px 0px 0px 25px;
+     border: 1px solid white;
+     padding: 15px;
+     outline: none;
+  }
+
+  .subscrib input[type=button]{
+    flex-basis: 120px;
+    border-radius: 25px;
+    background-color: turquoise;
+    color: white;
+    border: 1px solid turquoise;
+    padding: 15px;
+    cursor: pointer;
+ }
+  
+  .posts-product{
+      display: flex;
+      justify-content: space-between; 
+      width: 900px;
+      margin: 0 auto;    
+  }
+
+  .post-product{
+      position: relative;
+      width: 250px;
+      background-color: white;
+      border-radius: 20px;
+      cursor: pointer;
+      padding-bottom:40px ;
+         
+  }
+  .img{
+    overflow: hidden; 
+    border-radius: 20px 20px 0px 0px;
+    margin-bottom: 40px;
+  }
+
+  .post-product::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color:turquoise;
+    bottom: 25px;
+    right: 50%;
+    transform: translateX(50%);
+    z-index: 1;
+  }
+
+  .post-product p{
+    padding: 10px 0px;
+  }
+
+  .post-product img{
+      width: 100%;
+      transition: all .3s ease-in-out;
+  }
+
+  .post-product img:hover{
+    transform: scale(1.1);
+    filter: brightness(0.4);
+}
+    
+ 
+
+  /*------------
+  customer
+  -------------*/
+
+.customer{
+text-align: center;
+padding:100px 0px ;
+position: relative;
+}
+
+.customer p{
+  width: 400px;
+  margin: 0 auto;
+  line-height: 29px;
+}
+
+.customer-img div{
+  padding-bottom: 20px;
+}
+
+.back-customer{
+  position: absolute;
+  transform: translate(-65%,-1%);
+}
+
+.back-customer2{
+    position: absolute;
+    transform: translate(115%,1%);
+  }
+
+  .cycle2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+  }
+
+  .cycle2 div{
+    border-radius: 5px;
+    border: 1px solid turquoise;
+    padding: 3px;
+    background-color: white;
+    margin: 3px;
+  }
+
+  .star{
+    direction: rtl;
+  }
+
+  .star input[type=radio]{
+    display: none;
+  }
+
+  .star label {
+    color: #bbb;
+    font-size: 18px;
+    cursor: pointer; 
+}
+
+.star label:hover,
+.star label:hover ~ label,
+.star input[type=radio]:checked ~ label {
+  color: turquoise;
+}
+  /*------------
+ about
+ -----------*/
+
+  .about-us{
+      text-align: center;
+      background-color: rgb(255, 255, 255);
+      position: relative;
+      margin-top: 200px;
+      z-index: 6;
+  }
+
+  .about-post{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .about-post div{
+      border: 1px dashed rgb(160, 159, 159);
+      border-radius: 10%;
+      width: 250px;
+      padding: 50px 25px;
+      cursor: pointer;
+  }
+
+  .about-post h4{
+    padding: 10px 0px;
+  }
+
+  .about-title{
+      width: 400px;
+      margin: 0 auto;
+      padding-bottom: 50px;
+  }
+
+  .about-post div:hover{
+    background-color: turquoise;
+    color: white;
+    border: 1px dashed turquoise;
+  }
+
+  .about-post div:hover img{
+    filter: brightness(0) invert(1);
+  }
+
+  /*-------------
+  footer
+  --------------*/
+
+  footer{
+      background-color:rgb(251, 254, 254) ; 
+      background-image: url(/resources/img/Mask\ Group\ 7.png);
+      padding: 60px 0px 20px 0px;
+      line-height: 30px;
+  }
+
+  .footer-col{
+      display: flex;
+      flex-direction: row;
+      color: white;
+      justify-content: space-between;
+      align-items:baseline;    
+  }
+
+  .footer-col {
+      margin-top: 60px; 
+  }
+
+  .information{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .information :first-of-type{
+    margin-right: 55px;
+  }
+
+  .h-line2{
+    position: relative;
+    margin-bottom: 15px;
+  }
+
+  .h-line2::after{
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 2px;
+      background-color:turquoise;
+      bottom: -10px;
+      right: 70%;
+      transform: translateX(50%);
+      z-index: 2;
+  }
+
+  .h-line3{
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .h-line3::after{
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 2px;
+      background-color:turquoise;
+      bottom: -10px;
+      right: 84%;
+      transform: translateX(50%);
+      z-index: 2;
+  }
+
+  .h-line1{
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  .h-line1::after{
+      content: "";
+      position: absolute;
+      width: 70px;
+      height: 2px;
+      background-color:turquoise;
+      bottom: -13px;
+      right: 90%;
+      transform: translateX(50%);
+      z-index: 2;
+  }
+
+  .icons{
+    display: flex;
+  }
+
+  .icons div img{
+    margin-right: 7px;
+    width: 70%;
+    cursor: pointer;
+  }
+
+  .icons div img:hover{
+    margin-right: 7px;
+    margin-left: 3.5px;
+    width: 75%;
+    transition: .3s;
+  }
+
+  .logo-footer{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .logo-footer h2{
+    margin: 0px;
+  }
+  

@@ -1,0 +1,155 @@
+@media only screen and (max-width: 1200px) {
+    .main-img img{
+        display: none;
+    }
+    .wrapper{
+        padding: 0 2%;      
+    }
+    .about-us{
+        margin-top: 0px;
+    }
+    .about-post , .post-proud{
+        padding: 0 2%;
+      }
+
+    .footer-col{
+        justify-content: space-between;
+    }
+
+}
+
+@media only screen and (max-width: 1024px){
+    .container{
+        width: 770px;
+    }
+    .about-us{
+        margin-top: 0px;
+    }
+    .about-post{
+        width: 600px;
+        flex-wrap:wrap;
+        margin: 0 auto;
+
+    }
+    .about-post div{
+        margin-bottom: 25px;
+      }
+    .post-proud img{
+        width: 100px;
+    }
+    .back-customer, .back-customer2{
+        display: none;
+    }
+    .post-product div{
+        width: 200px; ;
+    }
+    .post-product{
+        width: auto;
+        padding:0 2% ;
+    }
+    .inf{
+        display: none;
+    }
+    .information :first-of-type{
+        margin-right: 0px;
+      }
+      .icons{
+        width: 100px;
+      }
+      .footer-col{padding: 0 20px;}
+
+
+    
+
+}
+
+@media only screen and (max-width: 767px){
+    body{
+        font-size: 15px;
+    }
+    section{
+        padding: 50px 0px;
+    }
+  .container{
+      width:400px;
+  } 
+  .imgb{
+      display:none;
+  }
+  .main-nav{
+      display: none;
+  }
+  .about-post{
+    width: 300px;
+    flex-wrap:wrap;
+    margin: 0 auto;
+    justify-content: center;
+
+}
+.about-post div{
+  margin-bottom: 25px;
+}
+.post-proud img{
+    width: 60px;
+}
+.post-product div{
+    width: 300px;
+    margin-bottom: 25px;
+}
+.post-product{
+    width: 300px;
+    flex-wrap:wrap;
+    margin: 0 auto;
+    justify-content: center;
+}
+footer {
+    background-color: rgb(47, 66, 95);
+    background-image: none;
+    padding: 50px 0px 20px 0px;
+}
+.footer-col{
+    width: 200px;
+    flex-wrap:wrap;
+    margin: 0 auto; 
+    justify-content: center;
+    align-items: center;  
+    text-align: center;
+}
+.footer-col div{
+    margin-bottom: 25px; 
+}
+.h-line1, .h-line2, .h-line3::after{
+    display: none;
+}
+
+}
+@media only screen and (max-width: 375px){
+
+    .body{
+        font-size: 10px;
+        text-align: center;
+    }
+    .container{
+        width:300px;
+        margin:0 auto;
+    }
+    section{
+        padding-left: 5%;
+        padding-right: 5%;
+        
+    }
+    .hero-text1{
+        width: 300px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .about-title, .proud-title, .customer p, .product-title{
+        width: 250px;
+    }
+    .post-proud img{
+        width: 50px;
+    }
+    .subscrib input[type=text]{
+        flex-basis: 150px;
+    }
+}
