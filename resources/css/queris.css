@@ -1,15 +1,22 @@
 @media only screen and (max-width: 1200px) {
+    .container, .container-pro{
+        width: 1024px;
+        margin: 0 auto;
+    }
     .main-img img{
-        display: none;
+      display: none;
     }
     .wrapper{
         padding: 0 2%;      
     }
     .about-us{
-        margin-top: 0px;
+       margin-top: 0px;
     }
     .about-post , .post-proud{
         padding: 0 2%;
+      }
+      .about-post div{
+        width: 240px;
       }
 
     .footer-col{
@@ -19,8 +26,9 @@
 }
 
 @media only screen and (max-width: 1024px){
-    .container{
-        width: 770px;
+    .container, .container-pro{
+        width: 768px;
+        margin: 0 auto;
     }
     .about-us{
         margin-top: 0px;
@@ -29,24 +37,19 @@
         width: 600px;
         flex-wrap:wrap;
         margin: 0 auto;
-
     }
     .about-post div{
         margin-bottom: 25px;
       }
-    .post-proud img{
-        width: 100px;
-    }
+
     .back-customer, .back-customer2{
         display: none;
     }
-    .post-product div{
-        width: 200px; ;
-    }
     .post-product{
-        width: auto;
-        padding:0 2% ;
+        width: 230px;
+        margin: 0 auto;
     }
+
     .inf{
         display: none;
     }
@@ -70,9 +73,13 @@
     section{
         padding: 50px 0px;
     }
-  .container{
-      width:400px;
+  .container, .container-pro{
+      width:375px;
+      margin: 0 auto;
   } 
+  .title, .customer p, .hero-text1{
+    width: 350px;
+}
   .imgb{
       display:none;
   }
@@ -84,24 +91,21 @@
     flex-wrap:wrap;
     margin: 0 auto;
     justify-content: center;
-
 }
 .about-post div{
   margin-bottom: 25px;
+}
+.posts-product{
+ flex-wrap: wrap;
+ justify-content: center;
 }
 .post-proud img{
     width: 60px;
 }
 .post-product div{
-    width: 300px;
     margin-bottom: 25px;
 }
-.post-product{
-    width: 300px;
-    flex-wrap:wrap;
-    margin: 0 auto;
-    justify-content: center;
-}
+
 footer {
     background-color: rgb(47, 66, 95);
     background-image: none;
@@ -129,7 +133,8 @@ footer {
         font-size: 10px;
         text-align: center;
     }
-    .container{
+    
+    .container, .container-pro{
         width:300px;
         margin:0 auto;
     }
@@ -143,7 +148,7 @@ footer {
         margin: 0 auto;
         text-align: center;
     }
-    .about-title, .proud-title, .customer p, .product-title{
+    .title, .customer p{
         width: 250px;
     }
     .post-proud img{
@@ -152,4 +157,33 @@ footer {
     .subscrib input[type=text]{
         flex-basis: 150px;
     }
+    .wrapper{
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 280px){
+    .container, .container-pro{
+        width:270px;
+        margin:0 auto;
+    }
+    .hero-text1{
+        width: 270px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .about-post{
+        width: 250px;
+    }
+    .subscrib input[type=text]{
+        flex-basis: 50px;
+        padding: 10px;
+        
+    }
+    .subscrib input[type=button]{
+        flex-basis: 10px;
+        border-radius:10px;
+        padding: 10px;
+        
+    }
+
 }

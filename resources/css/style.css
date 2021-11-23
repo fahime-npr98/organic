@@ -11,7 +11,7 @@
 body, html{
   font-family: 'Libre Baskerville', serif;
   color: rgba(55, 75, 92);
-  overflow-x: hidden;    
+     
 }
 
 /* width */
@@ -56,7 +56,7 @@ h1{
     text-decoration: none;
     border-radius:8px ;
     padding: 10px 38px;
-    margin-top: 4%;
+    margin-top: 10px;
 }
 
 .btn-gost{
@@ -81,6 +81,12 @@ section{
   padding: 100px 0px;
 }
 
+.title{
+  width: 400px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
 /*-------------
   header
   ------------*/
@@ -91,14 +97,15 @@ section{
 
 .wrapper{
     display: flex;
-    justify-content: space-between;       
+    justify-content: space-between; 
+    align-items: center;      
 }
 
 .logo{
     display: flex;
     align-items: center;
     cursor: pointer;
-    padding-top:5px ; 
+    margin-top:5px ; 
 }
 
 .logo h2{
@@ -112,11 +119,11 @@ section{
 
 .main-nav{
     list-style: none;
-    margin-top: 15px; 
+    margin-top: 12px; 
 }
 
 .main-nav li{
-    display: inline-flex;
+    display: inline;
     margin-left: 25px;
     cursor: pointer;
 }
@@ -133,20 +140,24 @@ hero
 
 .hero-text{
     background-image: linear-gradient(rgb(241, 254, 254), rgb(255, 255, 255));
+    overflow-x: hidden;
 }
 
 .hero-text1{
   width: 450px;
+  
 }
-
+.main-img{
+  position: relative;
+}
 .main-img img{
     position: absolute;
 }
 
 .imga{
     z-index: 0;
-    top:13%;
-    left:45%;
+    top:-90px;
+    right:-200px;
 }
 
 .imgb{
@@ -163,8 +174,7 @@ hero
 
 .imgc{
     z-index: 2;
-    top:40%;
-    left:39%;
+    right:230px;
 }
 
 /*-------------
@@ -173,12 +183,6 @@ hero
   .proud{
     background-color: rgb(251, 254, 254);  
     text-align: center;  
-  }
-
-  .proud-title{
-    width: 400px;
-    margin: 0 auto;
-    padding-bottom: 50px;
   }
 
   .post-proud{
@@ -193,37 +197,27 @@ hero
 
 .cycle{
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding-top: 30px;
+  margin-top: 30px;
+  
 }
 
 .cycle div{
   border-radius: 5px;
   padding: 3px;
   background-color: rgba(55, 75, 92);
-  margin: 4px;
+  margin: 0 4px;
 }
-
 /*-------------
-  product
+  subscribe
   ----------*/
- 
-  .product{
-    background-color:rgb(251, 254, 254);
+  .sub{
     text-align: center;
   }
-
-  .product-title{
-    width: 400px;
-    margin: 0 auto; 
-    padding-bottom: 80px;
-  }
-
   .subscrib{
      display: flex;
      justify-content: center;
-     padding-bottom:150px ;
+     
   }
 
   .subscrib input[type=text]{
@@ -243,12 +237,22 @@ hero
     padding: 15px;
     cursor: pointer;
  }
+/*-------------
+  product
+  ----------*/
+  .container-pro{
+      width: 900px;
+      margin: 0 auto;
+  }
+ 
+  .product{
+    background-color:rgb(251, 254, 254);
+    text-align: center;
+  }
   
   .posts-product{
       display: flex;
       justify-content: space-between; 
-      width: 900px;
-      margin: 0 auto;    
   }
 
   .post-product{
@@ -302,6 +306,7 @@ hero
 text-align: center;
 padding:100px 0px ;
 position: relative;
+overflow-x: hidden;
 }
 
 .customer p{
@@ -310,25 +315,24 @@ position: relative;
   line-height: 29px;
 }
 
-.customer-img div{
+.customer-img > *{
   padding-bottom: 20px;
 }
 
 .back-customer{
   position: absolute;
-  transform: translate(-65%,-1%);
+  transform: translate(-550px,-1px);
 }
 
 .back-customer2{
     position: absolute;
-    transform: translate(115%,1%);
+    transform: translate(900px,1px);
   }
 
   .cycle2{
     display: flex;
-    align-items: center;
     justify-content: center;
-    padding-top: 15px;
+    margin-top: 15px;
   }
 
   .cycle2 div{
@@ -366,13 +370,12 @@ position: relative;
       text-align: center;
       background-color: rgb(255, 255, 255);
       position: relative;
-      margin-top: 200px;
+      margin-top: 100px;
       z-index: 6;
   }
 
   .about-post{
-    display: flex;
-    align-items: center;
+    display: flex;   
     justify-content: space-between;
   }
 
@@ -388,11 +391,7 @@ position: relative;
     padding: 10px 0px;
   }
 
-  .about-title{
-      width: 400px;
-      margin: 0 auto;
-      padding-bottom: 50px;
-  }
+ 
 
   .about-post div:hover{
     background-color: turquoise;
@@ -411,26 +410,22 @@ position: relative;
   footer{
       background-color:rgb(251, 254, 254) ; 
       background-image: url(/resources/img/Mask\ Group\ 7.png);
-      padding: 60px 0px 20px 0px;
+      padding: 120px 0px 20px 0px;
       line-height: 30px;
   }
 
   .footer-col{
       display: flex;
-      flex-direction: row;
       color: white;
-      justify-content: space-between;
-      align-items:baseline;    
+      justify-content: space-between;    
   }
 
-  .footer-col {
-      margin-top: 60px; 
-  }
 
   .information{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 15px;
   }
 
   .information :first-of-type{
@@ -457,6 +452,7 @@ position: relative;
   .h-line3{
     position: relative;
     margin-bottom: 20px;
+    margin-top: 15px;
   }
 
   .h-line3::after{
@@ -474,6 +470,7 @@ position: relative;
   .h-line1{
     position: relative;
     margin-bottom: 10px;
+    width: 350px;
   }
 
   .h-line1::after{
