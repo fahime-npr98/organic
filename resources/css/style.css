@@ -131,7 +131,8 @@ section{
 .main-nav :last-child{
     border-radius: 8px;
     border:solid turquoise 2px;
-    padding:10px 38px;
+    padding:10px 30px;
+    margin-left: 8px;
 }
 
 /*-------------
@@ -479,27 +480,26 @@ overflow-x: hidden;
       width: 70px;
       height: 2px;
       background-color:turquoise;
-      bottom: -13px;
-      right: 90%;
-      transform: translateX(50%);
+      bottom: -10px;
+      left: 0px;
       z-index: 2;
   }
 
   .icons{
     display: flex;
   }
-
+   .icons div{
+     width: 10%;
+     margin:0px 7px;
+     cursor: pointer;
+   }
   .icons div img{
-    margin-right: 7px;
-    width: 70%;
-    cursor: pointer;
+    width: 100%; 
   }
 
-  .icons div img:hover{
-    margin-right: 7px;
-    margin-left: 3.5px;
-    width: 75%;
-    transition: .3s;
+  .icons div:hover{
+    width: 15%;
+    transition: .5s;
   }
 
   .logo-footer{
